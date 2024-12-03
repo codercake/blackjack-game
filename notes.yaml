@@ -1,0 +1,128 @@
+//Tech-with-Tim
+-Dynamic and Statically Typed Variables-
+Dynamically typed - The type of variables can change at runtime. A lot more flexible. 
+Type erros are detected at runtime, which can lead to unexpected crashes and bugs
+Statically typed - Type of variables cannot change ince it's declared
+This promotes type safety and detects errors at an early stage. Improves the performance of the program. 
+
+-Interpreter-
+Reads the code and translates it line by line into what's known as Machine code/Byte code
+
+-Compiler-
+Catches type-related errors before the program runs, leading to more reliable code
+
+TypeScript is a statically typed language which was designed and currently maintained by Microsoft. A superset of JS that builds on top of JS's existing syantax and functionality.
+BENEFITS INCLUDE: 
+1. Adds a type system to JS which gives us static type checking and makes the development experience much better
+2. I gives static type checking while maintaining the flexibility of JS
+3. Using TS allows us to use JS libraries and frameworks with the added safety of static type checking
+4. Allows us to actually check errors at compile time
+
+Commands:
+1. To install TS globally in the system
+`npm i -g typescript`
+Sudo provides an efficient way to temporarily grant users or user groups privileged access to system resources
+
+
+Null is used when you want to explicitly define something as empty or non-existent
+Undefined is more used as a placeholder, hat means a variable has been declared but has not yet been assigned a value
+Void type is when you are returning nothing from the function
+Never is used when we explicitly define that a function never returns
+
+An array is a collection of items, or data stored in contiguous memory locations, also known as database systems
+Tuple is fixed length array that has defined values for each position in the array
+
+Literal is a textual representation (notation) of a value as it is written in source code
+Enums or Enumerations enable developers to establish a collection of named constants(enumerators), each linked with an integer value. They are treated as data types, and you can use them to create sets of constants for use with variables and properties
+Types: String enums, value enums
+
+Any type allows for flexible typing but scarifices type safety as it lacks compile-time type checking
+Unknown type is a type-safety counterpart to the any type, maintaining type safety
+
+? & !(bang) operators allows us to check and deal with undefined values withing TS
+
+Interfaces ia a programming structure/syntax that allows the computer to enforce certain properties on an object (class)
+They allow us to interact with more complex objects and understandn what properties they've
+Any abstract method is typically going to be utilized by a concrete implementation in the abstract class
+
+Type Guard is a function that checks if a value is of a certain type and returns true or false
+Type Inference is the process of automatically determining the type of a variable based on the context in which it is used
+Type Assertion is a way to tell the compiler that you know better than it does, and that a value is of a certain type, even if the compiler can't figure it out on its own
+Type Casting is the process of converting a value from one type to another
+Type Narrowing is the process of reducing the type of a value to a more specific type based on
+Type Widening is the process of increasing the type of a value to a more general type based on
+Type Parameters are placeholders for types that are specified when a generic type is instantiated, used to define generic functions, classes, and interfaces
+
+//Mosh
+Basic Types
+1. Number, String, Boolean
+2. Arrays, Tuples
+3. Any, Unknown, Never, void
+4. Enums
+5. Classes
+6. Interfaces
+7. Type Guards
+8. Type Inference
+9. Union and Intersection types
+10. Type Parameters
+11. Generics
+12. Type Aliases
+13. Mapped Types
+14. Conditional Types
+15. Inference of Type Parameters
+16. Type Checking - core principles that focuses on the shape that values have. It is called "Duck Typing" or "Structural Subtyping".
+Type	Predicate
+string	typeof s === "string"
+number	typeof n === "number"
+boolean	typeof b === "boolean"
+undefined	typeof undefined === "undefined"
+function	typeof f === "function"
+array	Array.isArray(a)
+
+Data types 
+When you dont specify a type, and TS cant infer it from the context, the compiler will typically default to the type "any". This is a type that represents any value. It is the most permissive one. Usually avoid this type, because it can lead to runtime errors.
+
+Functions
+primary needs of passing data around in JS. TS adds type annotations to functions, so you can specify the types of the parameters and the return value. 
+1. Parameter Type Annotations
+2. Return Type Annotations
+3. Optional Parameters
+4. Default Parameters
+5. Rest Parameters
+6. Spread Parameters
+7. Function Overloads
+8. Function Expressions
+9. Arrow Functions
+10. Function Type Inference
+11. Function Type Guards
+12. Function Type Inference with Generics, Unknown Type, Never Type
+13. Function Type Inference with Type Parameters
+14. Function Type Inference with Type Aliases
+15. Function Type Inference with Mapped Types
+16. Function Type Inference with Conditional Types
+
+CONTENTS
+1. Introduction
+2. Setting up the Development Environment
+3. Creating first TypeScript Program
+4. Configuring the TS Compiler
+5. Debugging TS apps
+
+1. What is TyeScript - Shortcomings of JS. Expansion. Benefits include:
+- Static Typing
+- Code Completion 
+- Refactoring
+- Shorthand notations
+
+Drawbacks
+- Transpilation -> Compilation 
+- Time consuming to debug
+
+Statically typed - C, C++, Java, etc.
+int number = 10;
+number = "a"; 
+Dynamically typed - JS, Python, Ruby etc.
+let number = 10;
+number = "a"; 
+Math.round(number);
+
